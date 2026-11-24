@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="250" viewBox="0 0 1000 250" role="img" aria-label="M Alashraf Tolimat — Game Programmer HUD Banner">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#050811"/>
+      <stop offset="50%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#070a13"/>
+    </linearGradient>
+    <radialGradient id="cyanGlow" cx="85%" cy="80%" r="45%">
+      <stop offset="0%" stop-color="#00e0ff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#00e0ff" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="goldGlow" cx="15%" cy="20%" r="45%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#d4af37" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#f6e6a8"/>
+      <stop offset="100%" stop-color="#d4af37"/>
+    </linearGradient>
+    <linearGradient id="scanLineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#d4af37" stop-opacity="0"/>
+      <stop offset="25%" stop-color="#d4af37" stop-opacity="0.55"/>
+      <stop offset="50%" stop-color="#00e0ff" stop-opacity="0.85"/>
+      <stop offset="75%" stop-color="#ff6a00" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#ff6a00" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="cyberGrid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00e0ff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Base Container -->
+  <rect width="1000" height="250" rx="4" fill="url(#bgGrad)"/>
+  <rect width="1000" height="250" fill="url(#cyberGrid)"/>
+  <rect width="1000" height="250" fill="url(#cyanGlow)"/>
+  <rect width="1000" height="250" fill="url(#goldGlow)"/>
+
+  <!-- Chamfered Orokin HUD Outer Frame -->
+  <polygon points="24,8 976,8 992,24 992,226 976,242 24,242 8,226 8,24"
+           fill="none" stroke="#d4af37" stroke-opacity="0.42" stroke-width="1.2"/>
+  <polygon points="28,13 972,13 987,28 987,222 972,237 28,237 13,222 13,28"
+           fill="none" stroke="#00e0ff" stroke-opacity="0.16" stroke-width="0.8"/>
+
+  <!-- Corner Brackets -->
+  <path d="M 8 42 L 8 24 L 24 8 L 62 8" fill="none" stroke="#d4af37" stroke-width="2.5"/>
+  <path d="M 938 8 L 976 8 L 992 24 L 992 42" fill="none" stroke="#00e0ff" stroke-width="2.5"/>
+  <path d="M 8 208 L 8 226 L 24 242 L 62 242" fill="none" stroke="#ff6a00" stroke-width="2.5"/>
+  <path d="M 938 242 L 976 242 L 992 226 L 992 208" fill="none" stroke="#d4af37" stroke-width="2.5"/>
+
+  <!-- Top Telemetry Bar -->
+  <text x="34" y="33" fill="#64748b" font-family="Consolas, 'Courier New', monospace" font-size="11" letter-spacing="1.5">
+    [ SYS.ONLINE // <tspan fill="#00e0ff">TOKYO_JP</tspan> ]
+  </text>
+
+  <text x="500" y="33" text-anchor="middle" fill="#d4af37" font-family="Consolas, 'Courier New', monospace" font-size="11" font-weight="700" letter-spacing="2.8">
+    &#x2726; 7aSanki // GAME_DEV_PROFILE &#x2726;
+  </text>
+
+  <circle cx="806" cy="29" r="4" fill="#10b981">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="818" y="33" fill="#94a3b8" font-family="Consolas, 'Courier New', monospace" font-size="11" letter-spacing="1.2">
+    STATUS: <tspan fill="#34d399" font-weight="700">OPEN_TO_WORK</tspan>
+  </text>
+
+  <!-- Energy Scanline -->
+  <rect x="40" y="46" width="920" height="1.5" fill="url(#scanLineGrad)">
+    <animate attributeName="opacity" values="0.65;1;0.65" dur="3.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Centerpiece Title & Subtitle -->
+  <text x="500" y="106" text-anchor="middle" fill="url(#goldTitleGrad)" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="40" font-weight="800" letter-spacing="6">
+    M ALASHRAF TOLIMAT
+  </text>
+
+  <text x="500" y="140" text-anchor="middle" fill="#00e0ff" font-family="'Segoe UI', Inter, -apple-system, BlinkMacSystemFont, sans-serif" font-size="16" font-weight="600" letter-spacing="2.5">
+    &#x645;&#x62D;&#x645;&#x62F; &#x627;&#x644;&#x623;&#x634;&#x631;&#x641; &#x637;&#x644;&#x64A;&#x645;&#x627;&#x62A;  &#x00B7;  GAME PROGRAMMER (UNITY &amp; C#)
+  </text>
+
+  <text x="500" y="170" text-anchor="middle" fill="#94a3b8" font-family="Consolas, 'Courier New', monospace" font-size="12" letter-spacing="2.6">
+    "BRIDGING CODE, CREATIVITY, AND CORE GAMEPLAY"
+  </text>
+
+  <!-- Bottom HUD Chips -->
+  <g font-family="Consolas, 'Courier New', monospace" font-size="11" font-weight="600" letter-spacing="1">
+    <!-- Chip 1 -->
+    <polygon points="104,195 344,195 352,203 352,223 344,231 104,231 96,223 96,203"
+             fill="#0e1628" stroke="#d4af37" stroke-opacity="0.55" stroke-width="1"/>
+    <text x="224" y="217" text-anchor="middle" fill="#f6e6a8">&#x25C8; TECHNOS COLLEGE TOKYO</text>
+
+    <!-- Chip 2 -->
+    <polygon points="376,195 648,195 656,203 656,223 648,231 376,231 368,223 368,203"
+             fill="#0e1628" stroke="#00e0ff" stroke-opacity="0.55" stroke-width="1"/>
+    <text x="512" y="217" text-anchor="middle" fill="#e2e8f0">&#x25C8; GAME TESTER (QA) @ LIONBRIDGE</text>
+
+    <!-- Chip 3 -->
+    <polygon points="680,195 896,195 904,203 904,223 896,231 680,231 672,223 672,203"
+             fill="#0e1628" stroke="#ff6a00" stroke-opacity="0.55" stroke-width="1"/>
+    <text x="788" y="217" text-anchor="middle" fill="#fdba74">&#x25C8; AR / JA (N2) / TR (C1) / EN</text>
+  </g>
+</svg>
